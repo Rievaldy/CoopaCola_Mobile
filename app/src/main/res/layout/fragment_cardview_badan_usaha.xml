@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp">
+    <android.support.v7.widget.CardView
+        android:layout_height="200dp"
+        android:layout_width="180dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/imageBadanUsaha"
+                />
+            <TextView
+                android:id="@+id/txtNamaBadanUsaha"
+                android:layout_height="18dp"
+                android:layout_width="wrap_content"
+                android:text="Nama Badan Usaha"
+                android:textSize="18dp"
+                android:layout_below="@id/imageBadanUsaha"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                />
+
+            <TextView
+                android:id="@+id/txtLokasiBadanUsaha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNamaBadanUsaha"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:autoSizeTextType="uniform"
+                android:text="Lokasi Badan USaha"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

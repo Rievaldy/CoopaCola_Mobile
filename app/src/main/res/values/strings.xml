@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Coopa Cola</string>
+    <string name="identity_type_prompt">Choose a identity Type</string>
+    <string-array name="identity_type">
+        <item>Choose</item>
+        <item>KTP</item>
+        <item>SIM</item>
+        <item>KTM</item>
+    </string-array>
+</resources>

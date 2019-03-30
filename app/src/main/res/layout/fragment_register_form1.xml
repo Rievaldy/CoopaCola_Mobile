@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form_register_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewFullName"
+            android:layout_width="87dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Full Name"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:text="Email"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/textViewWarningFullName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWarningFullName" />
+
+        <TextView
+            android:id="@+id/textViewMotherName"
+            android:layout_width="114dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="32dp"
+            android:text="Mother Name"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/textViewWarningEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWarningEmail" />
+
+        <TextView
+            android:id="@+id/textViewIdentityNumber"
+            android:layout_width="141dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:text="Identity Number"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/textViewWarningMotherName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWarningMotherName" />
+
+        <TextView
+            android:id="@+id/textViewJob"
+            android:layout_width="141dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:text="Job"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/textViewWarningGender"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWarningGender" />
+
+        <TextView
+            android:id="@+id/textViewGender"
+            android:layout_width="141dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:text="Gender"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/textViewWarningChoseIdentityNumberType"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWarningChoseIdentityNumberType" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="141dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="32dp"
+            android:text="Address"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/textViewWarningJob"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWarningJob" />
+
+        <TextView
+            android:id="@+id/textViewCountry"
+            android:layout_width="141dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="36dp"
+            android:text="Country"
+            android:textSize="18dp"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@+id/textViewWarningAddress"
+            app:layout_constraintTop_toBottomOf="@+id/textViewWarningAddress" />
+
+        <TextView
+            android:id="@+id/textViewWarningJob"
+            android:layout_width="222dp"
+            android:layout_height="25dp"
+            android:text="Choose Your Job"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/spinnerJob"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerJob" />
+
+        <TextView
+            android:id="@+id/textViewWarningGender"
+            android:layout_width="222dp"
+            android:layout_height="25dp"
+            android:text="Choose Your Gender"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/spinnerGender"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerGender" />
+
+        <TextView
+            android:id="@+id/textViewWarningAddress"
+            android:layout_width="222dp"
+            android:layout_height="25dp"
+            android:text="Identity Number"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/editTextAdress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAdress" />
+
+        <TextView
+            android:id="@+id/textViewWarningCountry"
+            android:layout_width="222dp"
+            android:layout_height="25dp"
+            android:text="Choose your Country"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/spinnerCountry"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCountry" />
+
+        <TextView
+            android:id="@+id/textViewWarningFullName"
+            android:layout_width="214dp"
+            android:layout_height="25dp"
+            android:text="Fill Your Full Name"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/editTextFullName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFullName" />
+
+        <TextView
+            android:id="@+id/textViewWarningEmail"
+            android:layout_width="214dp"
+            android:layout_height="25dp"
+            android:text="Fill Your Email"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+        <TextView
+            android:id="@+id/textViewWarningMotherName"
+            android:layout_width="244dp"
+            android:layout_height="26dp"
+            android:text="Fill Your Mother Name"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/editTextMotherName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMotherName" />
+
+        <TextView
+            android:id="@+id/textViewWarningIdentityNumber"
+            android:layout_width="214dp"
+            android:layout_height="25dp"
+            android:text="Fill Your Full Name"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/editTextIdentityNumber"
+            app:layout_constraintTop_toBottomOf="@+id/editTextIdentityNumber" />
+
+        <TextView
+            android:id="@+id/textViewWarningChoseIdentityNumberType"
+            android:layout_width="214dp"
+            android:layout_height="25dp"
+            android:text="Chose Your Identity Card"
+            android:textSize="18dp"
+            android:textColor="@color/textIfEmpty"
+            app:layout_constraintStart_toStartOf="@+id/spinnerIDCardType"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerIDCardType" />
+
+        <EditText
+            android:id="@+id/editTextFullName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewFullName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFullName" />
+
+        <EditText
+            android:id="@+id/editTextMotherName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewMotherName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMotherName" />
+
+        <EditText
+            android:id="@+id/editTextAdress"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/textViewAddress"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAddress" />
+
+        <EditText
+            android:id="@+id/editTextIdentityNumber"
+            android:layout_width="224dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/spinnerIDCardType"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIdentityNumber" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/textViewEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+        <Spinner
+            android:id="@+id/spinnerIDCardType"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:entries="@array/identity_type"
+            android:prompt="@string/identity_type_prompt"
+            app:layout_constraintStart_toStartOf="@+id/textViewIdentityNumber"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIdentityNumber" />
+
+        <Spinner
+            android:id="@+id/spinnerJob"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:entries="@array/identity_type"
+            android:prompt="@string/identity_type_prompt"
+            app:layout_constraintStart_toStartOf="@+id/textViewJob"
+            app:layout_constraintTop_toBottomOf="@+id/textViewJob" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:entries="@array/identity_type"
+            android:prompt="@string/identity_type_prompt"
+            app:layout_constraintStart_toStartOf="@+id/textViewGender"
+            app:layout_constraintTop_toBottomOf="@+id/textViewGender" />
+
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:entries="@array/identity_type"
+            android:prompt="@string/identity_type_prompt"
+            app:layout_constraintStart_toStartOf="@+id/textViewCountry"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCountry" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
